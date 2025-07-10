@@ -58,7 +58,7 @@ main {
   text-align: center;
 }
 
-.about h2, .gallery h2 {
+.about h2, .shop h2 {
   font-size: 1.8em;
   color: #d8646c;
 }
@@ -69,18 +69,35 @@ main {
   font-size: 1em;
 }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+.shop {
   max-width: 900px;
   margin: 0 auto;
 }
 
-.gallery-grid img {
-  width: 100%;
+.product {
+  display: inline-block;
+  width: 280px;
+  margin: 15px;
+  padding: 15px;
+  background-color: #fff0f0;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(216, 135, 146, 0.3);
+  vertical-align: top;
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  margin: 10px 0 5px 0;
+}
+
+.product p {
+  margin: 5px 0 15px 0;
+  font-weight: bold;
 }
 
 footer {

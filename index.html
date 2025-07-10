@@ -2,37 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hooked from Scratch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hooked from Scratch - Shop</title>
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="my logo.png" alt="Hooked from Scratch Logo" class="logo" />
+    <img src="logo-placeholder.png" alt="Hooked from Scratch Logo" class="logo" />
     <h1>Welcome to Hooked from Scratch 🧶</h1>
-    <p>Handmade crochet items hooked with inspiration and love.</p>
+    <p>Handmade crochet items, tutorials, and inspiration with love.</p>
   </header>
 
   <nav>
-    <button onclick="window.location.href='https://yourshoplink.com'">🛍️ Shop our Handmade Items Today!</button>
+    <button onclick="window.location.href='#shop'">🛍️ Shop Now</button>
     <button onclick="window.location.href='https://youtube.com/@HookedfromScratch'">🎥 Watch Tutorials</button>
-    <button onclick="window.location.href='mailto:your@email.com'">📩 Contact Me</button>
+    <button onclick="window.location.href='mailto:youremail@example.com'">📩 Contact Me</button>
   </nav>
 
   <main>
     <section class="about">
       <h2>About Hooked from Scratch</h2>
-      <p>
-        I’m Sherene, a crochet artist sharing my passion one stitch at a time. Here you’ll find my handmade creations and inspiration to help you get hooked!
-      </p>
+      <p>I’m Sherene, a crochet artist sharing my passion one stitch at a time. Here you’ll find my handmade creations, step-by-step video tutorials, and inspiration to help you get hooked!</p>
     </section>
 
-    <section class="gallery">
-      <h2>🧵 Crochet Gallery</h2>
-      <div class="gallery-grid">
-        <img src="placeholder1.jpg" alt="Crochet piece 1" />
-        <img src="placeholder2.jpg" alt="Crochet piece 2" />
-        <img src="placeholder3.jpg" alt="Crochet piece 3" />
+    <section id="shop" class="shop">
+      <h2>🛒 Shop Our Crochet Creations</h2>
+      <div class="product">
+        <img src="placeholder1.jpg" alt="Cozy Crochet Scarf" />
+        <h3>Cozy Crochet Scarf</h3>
+        <p>Price: $30.00</p>
+        <button class="snipcart-add-item"
+          data-item-id="scarf001"
+          data-item-price="30.00"
+          data-item-url="https://hookedfromscratch.github.io/Hooked-from-Scratch/"
+          data-item-description="Handmade cozy crochet scarf.">
+          Add to cart
+        </button>
+      </div>
+
+      <div class="product">
+        <img src="placeholder2.jpg" alt="Colorful Crochet Beanie" />
+        <h3>Colorful Crochet Beanie</h3>
+        <p>Price: $25.00</p>
+        <button class="snipcart-add-item"
+          data-item-id="beanie001"
+          data-item-price="25.00"
+          data-item-url="https://hookedfromscratch.github.io/Hooked-from-Scratch/"
+          data-item-description="Bright and comfy crochet beanie.">
+          Add to cart
+        </button>
       </div>
     </section>
   </main>
@@ -41,9 +60,7 @@
     <p>&copy; 2025 Hooked from Scratch. All rights reserved.</p>
   </footer>
 
-  <script>
-    // Optional interaction if needed later
-    console.log("Hooked from Scratch site loaded");
-  </script>
+  <div hidden id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY"></div>
+  <script src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
 </body>
 </html>
