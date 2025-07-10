@@ -5,31 +5,26 @@ body {
   margin: 0;
   padding: 0;
 }
-
 header {
   background-color: #f7c6c7;
   text-align: center;
   padding: 40px 20px;
   border-bottom: 4px solid #eaa1a2;
 }
-
 .logo {
   width: 120px;
   height: auto;
   margin-bottom: 15px;
 }
-
 h1 {
   font-size: 2.2em;
   margin: 0;
 }
-
 p {
   font-size: 1.1em;
   max-width: 600px;
   margin: 10px auto;
 }
-
 nav {
   display: flex;
   justify-content: center;
@@ -37,7 +32,6 @@ nav {
   padding: 20px;
   background-color: #fde7e9;
 }
-
 nav button {
   background-color: #e89fa3;
   color: white;
@@ -48,32 +42,26 @@ nav button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
 nav button:hover {
   background-color: #d87582;
 }
-
 main {
   padding: 30px 20px;
   text-align: center;
 }
-
 .about h2, .shop h2 {
   font-size: 1.8em;
   color: #d8646c;
 }
-
 .about p {
   max-width: 700px;
   margin: 0 auto 40px auto;
   font-size: 1em;
 }
-
 .shop {
   max-width: 900px;
   margin: 0 auto;
 }
-
 .product {
   display: inline-block;
   width: 280px;
@@ -84,22 +72,18 @@ main {
   box-shadow: 0 4px 10px rgba(216, 135, 146, 0.3);
   vertical-align: top;
 }
-
 .product img {
   max-width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
 }
-
 .product h3 {
   margin: 10px 0 5px 0;
 }
-
 .product p {
   margin: 5px 0 15px 0;
   font-weight: bold;
 }
-
 footer {
   background-color: #f7c6c7;
   text-align: center;
