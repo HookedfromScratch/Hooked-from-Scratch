@@ -2,61 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hooked from Scratch - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crochet by Sherene</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@300;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="hero">
+  <header>
+    <div class="logo">Crochet by Sherene</div>
     <nav>
-      <div class="logo">Hooked from Scratch</div>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="hero-content">
-      <h1>Beautiful Handmade Crochet</h1>
-      <p>Crafted with love, stitched with passion.</p>
-      <a href="shop.html" class="btn">Shop Now</a>
-    </div>
   </header>
-
-  <section class="about-preview">
-    <h2>Meet Sherene</h2>
-    <p>I'm the maker behind Hooked from Scratch. I create unique, modern crochet pieces that bring warmth and beauty into everyday life.</p>
-    <a href="about.html" class="btn">Read More</a>
+  <section class="hero">
+    <h1>Handmade With Love</h1>
+    <p>Modern crochet pieces to brighten your day</p>
+    <a href="#products" class="cta-button">Shop Now</a>
   </section>
-
-  <section class="featured-products">
-    <h2>Featured Items</h2>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I'm Sherene, a passionate crochet artist. Each item is handmade with care and a touch of joy.</p>
+  </section>
+  <section id="products" class="products">
+    <h2>Featured Products</h2>
     <div class="product-grid">
       <div class="product-card">
-        <img src="placeholder1.jpg" alt="Crochet Scarf" />
-        <h3>Soft Pink Scarf</h3>
-        <p>$30.00</p>
-        <a href="shop.html" class="btn">Buy Now</a>
+        <img src="https://via.placeholder.com/300" alt="Crochet Item" />
+        <h3>Mini Plush Bunny</h3>
+        <p>$15.00</p>
       </div>
       <div class="product-card">
-        <img src="placeholder2.jpg" alt="Crochet Beanie" />
-        <h3>Cozy Beanie</h3>
-        <p>$25.00</p>
-        <a href="shop.html" class="btn">Buy Now</a>
+        <img src="https://via.placeholder.com/300" alt="Crochet Item" />
+        <h3>Colorful Coasters</h3>
+        <p>$8.00</p>
       </div>
     </div>
   </section>
-
-  <section class="tutorials">
-    <h2>YouTube Tutorials</h2>
-    <p>Follow along with fun and easy crochet tutorials on YouTube!</p>
-    <a href="https://youtube.com/@HookedfromScratch" target="_blank" class="btn">Watch Now</a>
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://via.placeholder.com/300" alt="Crochet 1">
+      <img src="https://via.placeholder.com/300" alt="Crochet 2">
+      <img src="https://via.placeholder.com/300" alt="Crochet 3">
+      <img src="https://via.placeholder.com/300" alt="Crochet 4">
+      <img src="https://via.placeholder.com/300" alt="Crochet 5">
+      <img src="https://via.placeholder.com/300" alt="Crochet 6">
+    </div>
   </section>
-
-  <footer>
-    <p>&copy; 2025 Hooked from Scratch | Follow me on Instagram @hookedfromscratch</p>
-  </footer>
+  <section id="testimonials" class="testimonials">
+    <h2>What Customers Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>"Absolutely adorable! The crochet bunny was even cuter in person."</p>
+        <h4>- Amanda R.</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"I love the colors and quality of the coasters I ordered. Will buy again!"</p>
+        <h4>- Tasha M.</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Fast delivery and such beautiful craftsmanship. Highly recommend."</p>
+        <h4>- Brianna L.</h4>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: hello@crochetbysherene.com</p>
+    <p>Instagram: @yourcrochetpage</p>
+  </section>
+  <div class="floating-buttons">
+    <a href="https://wa.me/18765639072" class="float-btn whatsapp" target="_blank" title="Chat on WhatsApp">💬</a>
+    <a href="mailto:hello@crochetbysherene.com" class="float-btn email" title="Send Email">📧</a>
+  </div>
+  <a href="#products" class="float-order-now pulse" title="Order Now">🧺 Order Now</a>
+  <button onclick="scrollToTop()" class="back-to-top" title="Back to Top">↑</button>
+  <script>
+    window.onscroll = function () {
+      document.querySelector('.back-to-top').style.display =
+        window.scrollY > 300 ? 'block' : 'none';
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
