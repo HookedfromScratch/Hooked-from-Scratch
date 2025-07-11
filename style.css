@@ -1,3 +1,22 @@
+.hero {
+  background-image: url('logo-placeholder.png'); /* change this to your actual logo file */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* optional dark overlay for better contrast */
+  padding: 40px;
+  width: 100%;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #fff8f4;
