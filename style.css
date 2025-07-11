@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -14,11 +15,9 @@ header {
   padding: 1rem 3rem;
 }
 
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: white;
+.logo-img {
+  height: 50px;
+  width: auto;
 }
 
 nav ul {
@@ -39,7 +38,7 @@ nav ul li a:hover {
 }
 
 .hero {
-  background: linear-gradient(45deg, #ff69b4cc, #ff85c1cc), url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+  background: linear-gradient(45deg, #ff69b4cc, #ff85c1cc);
   text-align: center;
   padding: 6rem 1rem;
   color: white;
@@ -62,126 +61,22 @@ nav ul li a:hover {
   background-color: #ff85c1;
 }
 
-.about, .products, .gallery, .testimonials, .contact {
-  max-width: 1100px;
-  margin: 3rem auto;
-  padding: 0 1rem;
-}
-
-h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  color: #ff69b4;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.product-grid {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.product-card {
-  background: white;
-  border-radius: 15px;
-  padding: 1rem;
-  max-width: 300px;
-  text-align: center;
-  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-}
-
-.product-card img {
-  max-width: 100%;
-  border-radius: 15px;
-  margin-bottom: 1rem;
-}
-
-.product-card h3 {
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.product-card p {
-  margin-bottom: 1rem;
-  font-weight: 500;
-  color: #ff69b4;
-}
-
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap: 1rem;
-}
-
-.gallery-grid img {
-  width: 100%;
-  border-radius: 15px;
-}
-
-.testimonial-grid {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.testimonial-card {
-  background: white;
-  border-radius: 15px;
-  padding: 1.5rem;
-  max-width: 300px;
-  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.2);
-}
-
-.testimonial-card p {
-  font-style: italic;
-  margin-bottom: 1rem;
-}
-
-.testimonial-card h4 {
-  text-align: right;
-  color: #ff69b4;
-  font-weight: 700;
-}
-
-.contact p {
-  text-align: center;
-  font-weight: 600;
-  color: #ff69b4;
-}
-
-.floating-buttons {
-  position: fixed;
-  bottom: 100px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  z-index: 1000;
-}
-
-.float-btn {
-  background-color: #ff69b4;
+.stripe-pay-btn {
+  background-color: #6772e5;
   color: white;
-  font-size: 1.8rem;
-  padding: 0.7rem 0.9rem;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.4);
-  cursor: pointer;
-  transition: background-color 0.3s;
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  font-weight: 600;
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(103, 114, 229, 0.5);
 }
 
-.float-btn:hover {
-  background-color: #ff85c1;
+.stripe-pay-btn:hover {
+  background-color: #5469d4;
 }
 
 .float-order-now {
@@ -208,45 +103,4 @@ h2 {
   50% {
     box-shadow: 0 0 15px 15px rgba(255, 105, 180, 0);
   }
-}
-
-.back-to-top {
-  position: fixed;
-  bottom: 100px;
-  right: 20px;
-  background-color: #ff69b4;
-  color: white;
-  border: none;
-  font-size: 1.4rem;
-  padding: 0.7rem 1rem;
-  border-radius: 30px;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.5);
-  display: none;
-  z-index: 1000;
-}
-
-.back-to-top:hover {
-  background-color: #ff85c1;
-}
-
-.payhip-buy-button {
-  background-color: #ff69b4 !important;
-  color: white !important;
-  padding: 0.6rem 1.2rem !important;
-  border-radius: 20px !important;
-  font-weight: 600 !important;
-  display: inline-block !important;
-  margin-top: 0.5rem !important;
-  text-align: center !important;
-  cursor: pointer !important;
-  transition: background 0.3s ease !important;
-  border: none !important;
-  font-family: 'Poppins', sans-serif !important;
-  text-decoration: none !important;
-}
-.payhip-buy-button:hover {
-  background-color: #ff85c1 !important;
-  text-decoration: none !important;
 }

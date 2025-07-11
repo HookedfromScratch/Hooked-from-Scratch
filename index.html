@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hooked from Scratch by Sher</title>
+  <title>Crochet by Sherene</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@300;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,15 +11,17 @@
 
   <!-- Header -->
   <header>
-    <div class="Untitled design.jpeg">Hooked from Scratch by Sher</div>
+    <div class="logo">
+      <img src="https://via.placeholder.com/150x50?text=Your+Logo" alt="Crochet by Sherene Logo" class="logo-img" />
+    </div>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#products">Products</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#testimonials">Reviews and Testimonials</a></li>
-        <li><a href="#contact">Contact Info</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -27,101 +29,18 @@
   <!-- Hero -->
   <section class="hero">
     <h1>Handmade With Love</h1>
-    <p>Unique Crochet Pieces to Brighten your Day!</p>
+    <p>Modern crochet pieces to brighten your day</p>
     <a href="https://payhip.com/HookedfromScratchbySher" class="cta-button" target="_blank">Shop Now</a>
+    <br><br>
+    <a href="https://buy.stripe.com/pmd_1RjousC2QalSrIw7jIbp8oVf" target="_blank" class="stripe-pay-btn">Pay Securely with Stripe</a>
   </section>
 
-  <!-- About -->
-  <section id="about" class="about">
-    <h2>I'm Sherene, a passionate crochet artist. Each item is handmade with care, love and a touch of joy. Hooked from Scratch was founded by Yours Truly in May 2025. It is a small crochet business that strives to offer the best qulity pieces at affordable prices.Welcome aboard and Happy Shopping!</h2>
-    <p>Each piece is Hooked from Scratch!</p>
-  </section>
+  <!-- Floating Stripe Order Now Button -->
+  <a href="https://buy.stripe.com/pmd_1RjousC2QalSrIw7jIbp8oVf" class="float-order-now pulse" title="Order Now" target="_blank">
+    🧺 Order Now
+  </a>
 
-  <!-- Products -->
-  <section id="products" class="products">
-    <h2>Featured Products</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300" alt="Crochet  Item 1" />
-        <h3>Crochet Item 1 </h3>
-        <p>$1.00</p>
-        <a href="https://payhip.com/b/Tdqvj" data-payhip-add-to-cart class="payhip-buy-button" data-theme="green" data-product="Tdqvj">Add to Cart</a>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300" alt="Crochet Item 2" />
-        <h3>Crochet Item 2</h3>
-        <p>$8.00</p>
-        <a href="https://payhip.com/b/YOUR_PRODUCT_ID" data-payhip-add-to-cart class="payhip-buy-button" data-theme="green" data-product="YOUR_PRODUCT_ID">Add to Cart</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section id="gallery" class="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="https://via.placeholder.com/300" alt="Crochet 1">
-      <img src="https://via.placeholder.com/300" alt="Crochet 2">
-      <img src="https://via.placeholder.com/300" alt="Crochet 3">
-      <img src="https://via.placeholder.com/300" alt="Crochet 4">
-      <img src="https://via.placeholder.com/300" alt="Crochet 5">
-      <img src="https://via.placeholder.com/300" alt="Crochet 6">
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials" class="testimonials">
-    <h2>What Customers Say</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial-card">
-        <p>""</p>
-        <h4>-</h4>
-      </div>
-      <div class="testimonial-card">
-        <p>""</p>
-        <h4>-</h4>
-      </div>
-      <div class="testimonial-card">
-        <p>""</p>
-        <h4>-</h4>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2>Contact Us </h2>
-    <p>Email:hookedfromscratch@gmail.com</p>
-    <p>Instagram: @hooked_from_scratch</p>
-  </section>
-
-  <!-- Floating Buttons -->
-  <div class="floating-buttons">
-    <a href="https://wa.me/18765639072" class="float-btn whatsapp" target="_blank" title="Chat on WhatsApp">💬</a>
-    <a href="mailto:hookedfromscratch@gmail.com" class="float-btn email" title="Send Email">📧</a>
-  </div>
-
-  <!-- Floating Order Now -->
-  <a href="https://payhip.com/HookedfromScratchbySher" class="float-order-now pulse" title="Order Now" target="_blank">🧺 Order Now</a>
-
-  <!-- Back to Top -->
-  <button onclick="scrollToTop()" class="back-to-top" title="Back to Top">↑</button>
-
-  <!-- JS for Back to Top -->
-  <script>
-    window.onscroll = function () {
-      document.querySelector('.back-to-top').style.display =
-        window.scrollY > 300 ? 'block' : 'none';
-    };
-
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
-
-  <!-- Payhip script for embedded buy buttons -->
+  <!-- Payhip Script -->
   <script type="text/javascript" src="https://payhip.com/payhip.js"></script>
-
 </body>
 </html>
-
