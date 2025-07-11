@@ -188,3 +188,23 @@ footer {
 .back-to-top:hover {
   background-color: #ff85c1;
 }
+
+.payhip-buy-button {
+  background-color: #ff69b4 !important;
+  color: white !important;
+  padding: 0.6rem 1.2rem !important;
+  border-radius: 20px !important;
+  font-weight: 600 !important;
+  display: inline-block !important;
+  margin-top: 0.5rem !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  transition: background 0.3s ease !important;
+  border: none !important;
+  font-family: 'Poppins', sans-serif !important;
+  text-decoration: none !important;
+}
+.payhip-buy-button:hover {
+  background-color: #ff85c1 !important;
+  text-decoration: none !important;
+}
