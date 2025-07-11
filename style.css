@@ -1,5 +1,65 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+main {
+  padding: 1rem 2rem;
+}
+
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.product {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
+}
+
 .hero {
-  background-image: url('Untitled design.jpeg'); 
+  background-image: url('logo-placeholder.png');
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -12,102 +72,7 @@
 }
 
 .hero .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* optional dark overlay for better contrast */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 40px;
   width: 100%;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff8f4;
-  color: #4b2e2e;
-  margin: 0;
-  padding: 0;
-}
-header {
-  background-color: #f7c6c7;
-  text-align: center;
-  padding: 40px 20px;
-  border-bottom: 4px solid #eaa1a2;
-}
-.logo {
-  width: 120px;
-  height: auto;
-  margin-bottom: 15px;
-}
-h1 {
-  font-size: 2.2em;
-  margin: 0;
-}
-p {
-  font-size: 1.1em;
-  max-width: 600px;
-  margin: 10px auto;
-}
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  padding: 20px;
-  background-color: #fde7e9;
-}
-nav button {
-  background-color: #e89fa3;
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-nav button:hover {
-  background-color: #d87582;
-}
-main {
-  padding: 30px 20px;
-  text-align: center;
-}
-.about h2, .shop h2 {
-  font-size: 1.8em;
-  color: #d8646c;
-}
-.about p {
-  max-width: 700px;
-  margin: 0 auto 40px auto;
-  font-size: 1em;
-}
-.shop {
-  max-width: 900px;
-  margin: 0 auto;
-}
-.product {
-  display: inline-block;
-  width: 280px;
-  margin: 15px;
-  padding: 15px;
-  background-color: #fff0f0;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(216, 135, 146, 0.3);
-  vertical-align: top;
-}
-.product img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-.product h3 {
-  margin: 10px 0 5px 0;
-}
-.product p {
-  margin: 5px 0 15px 0;
-  font-weight: bold;
-}
-footer {
-  background-color: #f7c6c7;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  color: #4b2e2e;
-  margin-top: 40px;
 }
