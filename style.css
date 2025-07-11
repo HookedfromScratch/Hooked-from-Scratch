@@ -1,106 +1,84 @@
 
 body {
-  font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding: 0;
-  background: #fff0f6;
+  font-family: 'Poppins', sans-serif;
+  background: #fffdfd;
   color: #333;
 }
-
 header {
-  background-color: #ff85c1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  background: #ffe3ec;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
-
-.logo-img {
-  height: 50px;
-  width: auto;
+.logo img {
+  height: 60px;
 }
-
 nav ul {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
-
 nav ul li a {
-  color: white;
+  text-decoration: none;
   font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s;
+  color: #d63384;
 }
-
-nav ul li a:hover {
-  color: #fff0f6;
-}
-
 .hero {
-  background: linear-gradient(45deg, #ff69b4cc, #ff85c1cc);
   text-align: center;
-  padding: 6rem 1rem;
-  color: white;
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #ffe3ec, #ffffff);
 }
-
 .cta-button {
-  background-color: #ff69b4;
+  background-color: #d63384;
   color: white;
-  padding: 1rem 3rem;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 40px;
   text-decoration: none;
+  font-weight: bold;
   display: inline-block;
   margin-top: 2rem;
-  transition: background-color 0.3s;
 }
-
-.cta-button:hover {
-  background-color: #ff85c1;
+.products {
+  padding: 2rem;
 }
-
-.stripe-pay-btn {
-  background-color: #6772e5;
-  color: white;
-  padding: 0.8rem 1.6rem;
-  border-radius: 30px;
-  font-weight: 600;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  display: inline-block;
-  margin-top: 10px;
-  transition: background 0.3s ease;
-  box-shadow: 0 4px 12px rgba(103, 114, 229, 0.5);
+.product-card {
+  background: #fff;
+  border: 2px dashed #ffb3c6;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem auto;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
-
-.stripe-pay-btn:hover {
-  background-color: #5469d4;
+.price {
+  font-weight: bold;
+  color: #d63384;
 }
-
-.float-order-now {
+.float-btn {
   position: fixed;
-  bottom: 40px;
-  right: 20px;
-  background-color: #ff69b4;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  border-radius: 50%;
   color: white;
-  font-size: 1.2rem;
-  padding: 0.8rem 1.5rem;
-  border-radius: 30px;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.5);
-  animation: pulse 2s infinite;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
   text-decoration: none;
   z-index: 1000;
 }
-
+.float-btn.whatsapp { right: 100px; background: #25D366; }
+.float-btn.order { right: 160px; background: #d63384; }
+.float-btn.top { right: 40px; background: #6c757d; }
+.pulse {
+  animation: pulse 2s infinite;
+}
 @keyframes pulse {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.7);
-  }
-  50% {
-    box-shadow: 0 0 15px 15px rgba(255, 105, 180, 0);
-  }
+  0% { box-shadow: 0 0 0 0 rgba(214, 51, 132, 0.5); }
+  70% { box-shadow: 0 0 0 20px rgba(214, 51, 132, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(214, 51, 132, 0); }
 }
