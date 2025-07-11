@@ -2,189 +2,231 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff0f5;
+  background: #fff0f6;
   color: #333;
 }
-h1, h2, h3 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-}
-a {
-  text-decoration: none;
-  color: #ff69b4;
-}
+
 header {
-  background-color: #fff;
-  padding: 1rem 2rem;
+  background-color: #ff85c1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 1rem 3rem;
 }
+
 .logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
   font-size: 1.8rem;
-  font-weight: 600;
-  color: #ff69b4;
+  color: white;
 }
+
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
+
+nav ul li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fff0f6;
+}
+
 .hero {
+  background: linear-gradient(45deg, #ff69b4cc, #ff85c1cc), url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
   text-align: center;
-  padding: 5rem 2rem;
-  background: linear-gradient(to right, #ffe0ec, #fff0f5);
+  padding: 6rem 1rem;
+  color: white;
 }
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
+
 .cta-button {
-  padding: 0.8rem 1.6rem;
   background-color: #ff69b4;
   color: white;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: background 0.3s;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2rem;
+  transition: background-color 0.3s;
 }
+
 .cta-button:hover {
   background-color: #ff85c1;
 }
-.about, .products, .contact, .gallery, .testimonials {
-  padding: 3rem 2rem;
+
+.about, .products, .gallery, .testimonials, .contact {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #ff69b4;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
+
 .product-grid {
   display: flex;
+  gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
 }
+
 .product-card {
-  background-color: #fff;
+  background: white;
   border-radius: 15px;
   padding: 1rem;
-  width: 280px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.2);
+  transition: transform 0.3s ease;
 }
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
 .product-card img {
-  width: 100%;
-  border-radius: 10px;
+  max-width: 100%;
+  border-radius: 15px;
+  margin-bottom: 1rem;
 }
+
+.product-card h3 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.product-card p {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #ff69b4;
+}
+
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   gap: 1rem;
-  margin-top: 2rem;
 }
+
 .gallery-grid img {
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 15px;
 }
+
 .testimonial-grid {
   display: flex;
+  gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
-  margin-top: 2rem;
 }
+
 .testimonial-card {
-  background-color: #fff;
+  background: white;
+  border-radius: 15px;
   padding: 1.5rem;
-  border-radius: 12px;
-  width: 300px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  font-style: italic;
+  max-width: 300px;
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.2);
 }
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
 .testimonial-card h4 {
-  margin-top: 1rem;
+  text-align: right;
+  color: #ff69b4;
+  font-weight: 700;
+}
+
+.contact p {
+  text-align: center;
   font-weight: 600;
   color: #ff69b4;
 }
-footer {
-  background-color: #fff;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  color: #999;
-}
+
 .floating-buttons {
   position: fixed;
-  bottom: 90px;
+  bottom: 100px;
   right: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   z-index: 1000;
 }
+
 .float-btn {
   background-color: #ff69b4;
   color: white;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 0.6rem 0.8rem;
+  font-size: 1.8rem;
+  padding: 0.7rem 0.9rem;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.4);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
 }
+
 .float-btn:hover {
-  transform: scale(1.1);
+  background-color: #ff85c1;
 }
-.whatsapp {
-  background-color: #25d366;
-}
-.email {
-  background-color: #ff69b4;
-}
+
 .float-order-now {
   position: fixed;
-  bottom: 160px;
+  bottom: 40px;
   right: 20px;
   background-color: #ff69b4;
   color: white;
-  font-weight: 600;
-  padding: 0.8rem 1.2rem;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 30px;
-  font-size: 0.95rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  z-index: 1000;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-.float-order-now:hover {
-  background-color: #ff85c1;
-  transform: scale(1.05);
-}
-.pulse {
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.5);
   animation: pulse 2s infinite;
+  text-decoration: none;
+  z-index: 1000;
 }
+
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.08); }
-  100% { transform: scale(1); }
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 15px 15px rgba(255, 105, 180, 0);
+  }
 }
+
 .back-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   right: 20px;
   background-color: #ff69b4;
   color: white;
   border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  font-weight: 700;
   cursor: pointer;
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.5);
   display: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   z-index: 1000;
 }
+
 .back-to-top:hover {
   background-color: #ff85c1;
 }
