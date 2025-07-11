@@ -1,1 +1,110 @@
-body { font-family: 'Poppins', sans-serif; background: pink; }
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff0f5;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #d63384;
+}
+
+p, a, li {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav .logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  color: #e83e8c;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e83e8c;
+  font-weight: 500;
+}
+
+.hero {
+  background: linear-gradient(to right, #ffdde1, #f99fbc);
+  text-align: center;
+  padding: 5rem 2rem;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #e83e8c;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background: #c32c6a;
+}
+
+.about-preview, .featured-products, .tutorials {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #eee;
+}
